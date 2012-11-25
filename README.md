@@ -24,11 +24,12 @@ Test it: `$ todo -h`
 
 ##Usage##
 Examples of commands
-`$ todo -s ` : shows the todolist 
-`$ todo -a "Write a letter to Santa "` : add a new item to list
-`$ todo -m 4 ` : mark item #4 as completed
-`$ todo -d 2` : delete item 2 from list
-`$ todo -x ` : delete the entire list (clear)
+
++ `$ todo -s ` : shows the todolist 
++ `$ todo -a "Write a letter to Santa "` : add a new item to list
++ `$ todo -m 4 ` : mark item #4 as completed
++ `$ todo -d 2` : delete item 2 from list
++ `$ todo -x ` : delete the entire list (clear)
 
 Combining commands
 `$ todo -s -m 2 -a "A new item"` : shows the current list, marks item 2 as completed, and adds "A new item" to the list
@@ -41,6 +42,6 @@ If you open the file shelltodo.py, you'll notice at the beginning of it the sett
 + AUTOLOAD: tells the script to load the todo list file before any action - `True` or `False`;
 + SHELLONLY: disables the interactive mode, and makes the script to go back to shell once the command(s) have been executed. When `False`, any call of the script from shell whithout the -q (quit) command will drop the user to interactive mode. Possible value `True` or `False`
 + HOMEDIR: the base directory to keep the todo.list file. You can set here an custom path, and thus have all users using the same todo list. Defaults  to the user's home directory.
-+ OUTFILE: The script's output file. Replacing it with an absolute path will have the same effect as the overwrite the option above, and have the same result.
++ OUTFILE: The script's output file. Replacing it with an absolute path will have the same effect, will overwrite the option above, and have the same result.
 
 
